@@ -3,73 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Damian Malunda</title>
+    <title>About Artist | Baraka Banzah — Banzah Artz</title>
+    <meta name="description" content="Learn about the artist behind Banzah Artz — Baraka Banzah. Discover his drawing techniques, tools of the trade, artistic philosophy, and background.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">Engineer Portfolio</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="Projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- ==========================================================================
+         Header / Navigation
+         ========================================================================== -->
+    <header class="site-header" id="main-header">
+        <a href="index.html" class="logo-brand" aria-label="Banzah Artz Home">
+            <div class="logo-icon-wrap">
+                <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="logo-text-group">
+                <span class="logo-title">BANZAH ARTZ</span>
+                <span class="logo-subtitle">Fine Art & Portraiture</span>
+            </div>
+        </a>
+
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="navbar-nav" id="navbar-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="about.html" class="nav-link active">About Artist</a></li>
+            <li><a href="contact.html" class="nav-link">Commissions & Contact</a></li>
+            <li>
+                <a href="https://wa.me/255765427438?text=Hello%20Baraka!%20I%20would%20like%20to%20commission%20a%20hand-drawn%20portrait." class="nav-cta-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Keep Your Order
+                </a>
+            </li>
+        </ul>
     </header>
 
-    <div class="container">
-        <h1>About Me</h1>
+    <!-- ==========================================================================
+         About Page Main Content
+         ========================================================================== -->
+    <main class="about-page-container">
         
-        <div class="bio-section">
-            <h2>Who I Am</h2>
-            <p>I am Damian Malunda, a Mechatronics and Software Engineer based in Mbeya, Tanzania. I combine mechanical systems, electronics, automation, and secure code to build smart, real-world solutions.</p>
-            <p><strong>Philosophy:</strong> Like a well-oiled machine, great technology requires both a robust physical structure and a secure, efficient software brain working seamlessly together.</p>
+        <!-- Artist Profile Hero -->
+        <section class="about-hero-grid">
+            <div class="artist-portrait-frame">
+                <div class="artist-portrait-inner">
+                    <img src="image/12.jpg" alt="Artistic ballpoint pen portrait by Baraka Banzah">
+                </div>
+                <div class="artist-badge-overlay">
+                    <span class="badge-status"></span>
+                    <span>The Artist Behind The Pen</span>
+                </div>
+            </div>
+
+            <div class="about-intro-text">
+                <span class="section-eyebrow">The Artist Behind The Pen</span>
+                <h1 class="page-title">Baraka Banzah</h1>
+                
+                <p>
+                    I am <strong>Baraka Banzah</strong>, an independent professional drawing artist based in Tanzania. I dedicate my life to the classical discipline of hand-drawn portraiture, hyper-detailed graphite shading, and intricate ballpoint pen artwork.
+                </p>
+
+                <p class="highlight-quote">
+                    "A drawing doesn't just replicate light — it reconstructs humanity. When you place thousands of individual strokes on virgin paper, you breathe a heartbeat into the image."
+                </p>
+
+                <p>
+                    My mission is to craft heirlooms that evoke genuine, enduring emotion for clients across the globe, And this is a right place to express your emotional. 
+                </p>
+
+                <div style="display: flex; gap: 14px; margin-top: 10px; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn-primary">
+                        <i class="fas fa-palette"></i> Commission a Portrait
+                    </a>
+                    <a href="https://wa.me/255765427438?text=Hello%20Baraka!%20I%20want%20to%20chat%20about%20a%20portrait%20drawing." class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools of the Atelier -->
+        <section class="atelier-tools-section">
+            <div style="text-align: center; max-width: 720px; margin: 0 auto 30px;">
+                <span class="section-eyebrow">Pure Physical Mediums</span>
+                <h2 class="page-title" style="font-size: 2.2rem;">Tools of the Atelier</h2>
+                <p class="page-lead" style="margin: 0 auto;">Zero digital filters. Zero automated prints. Only premium materials selected for archival longevity.</p>
+            </div>
+
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h4>Graphite & Charcoal</h4>
+                    <p>Faber-Castell & Staedtler graphite pencils (2H to 9B) providing smooth gradations from silvery highlights to deep velvety charcoal blacks.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon ink-tool">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h4>Bic Ballpoint Pens</h4>
+                    <p>Fine-tip 0.7mm and medium 1.0mm blue and black ballpoint pens for irreversible, feather-light hatching with unmatched vitality.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-scroll"></i>
+                    </div>
+                    <h4>Archival Bristol Paper</h4>
+                    <p>Heavyweight 250gsm to 300gsm acid-free smooth Bristol and cartridge paper that resists yellowing and preserves contrast for decades.</p>
+                </div>
+
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h4>Tortillons & Fixatives</h4>
+                    <p>Custom paper blending stumps, horsehair dry brushes, and museum UV fixative spray protecting against graphite smudges and sunlight.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artistic Mastery & Disciplines -->
+        <section class="duality-section">
+            <div style="text-align: center;">
+                <span class="section-eyebrow">Creative Vision</span>
+                <h2 class="page-title" style="font-size: 2.2rem;">Artistic Mastery & Disciplines</h2>
+                <p class="page-lead" style="margin: 0 auto;">
+                    Every portrait combines relentless geometric observation with raw emotional depth.
+                </p>
+            </div>
+
+            <div class="duality-grid">
+                <div class="duality-item">
+                    <h3><i class="fas fa-drafting-compass"></i> Fine Art Mastery</h3>
+                    <ul>
+                        <li><strong>Anatomical Realism:</strong> Precise facial geometry, subtle skin creases, and ocular reflections that convey true human emotion.</li>
+                        <li><strong>Cross-Hatching Control:</strong> Controlled line density that mimics shadow falloff without erasing.</li>
+                        <li><strong>Hair & Fabric Texture:</strong> Individual strand rendering and tactile cloth fold weights.</li>
+                        <li><strong>Emotional Depth:</strong> Capturing the unspoken story behind eyes, smiles, and contemplative expressions.</li>
+                    </ul>
+                </div>
+
+                <div class="duality-item">
+                    <h3><i class="fas fa-award"></i> The Studio Standard</h3>
+                    <ul>
+                        <li><strong>100% Traditional Hand-Drawn:</strong> Every gradient and hair strand is drawn on physical paper by hand.</li>
+                        <li><strong>Archival Durability:</strong> Finished with protective sealant to ensure the artwork lasts for generations.</li>
+                        <li><strong>Methodical Focus:</strong> Devoting 15 to 40 hours of patient, stroke-by-stroke concentration per piece.</li>
+                        <li><strong>Worldwide Safe Delivery:</strong> Packaged in reinforced protective sleeves and art tubes for secure delivery.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+         Site Footer
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="logo-brand">
+                    <div class="logo-icon-wrap">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="logo-text-group">
+                        <span class="logo-title">BANZAH ARTZ</span>
+                        <span class="logo-subtitle">Fine Art & Portraiture</span>
+                    </div>
+                </div>
+                <p>
+                    Specializing in hyper-realistic pencil portraits, ballpoint pen hatching, and custom artwork commissions based in Mbeya, Tanzania with worldwide delivery.
+                </p>
+                <div class="footer-social-wrap">
+                    <a href="https://wa.me/255765427438" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/banzah_artz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@banzah.art.vision" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/1MqgkRkwfF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Navigation</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-chevron-right"></i> Artwork Gallery</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Artist</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Commissions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Disciplines</h4>
+                <ul class="footer-links-list">
+                    <li><a href="Gallery.html"><i class="fas fa-pencil-alt"></i> Pencil Portraits</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-pen"></i> Ballpoint Pen Art</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-futbol"></i> Sports Icons</a></li>
+                    <li><a href="contact.html"><i class="fas fa-gift"></i> Custom Gifts</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Direct Inquiries</h4>
+                <ul class="footer-links-list">
+                    <li><a href="https://wa.me/255765427438"><i class="fab fa-whatsapp"></i> +255 765 427 438</a></li>
+                    <li><a href="mailto:barakabanzah@gmail.com"><i class="fas fa-envelope"></i> barakabanzah@gmail.com</a></li>
+                    <li><span><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> Mbeya / Iyunga, Tanzania</span></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="edu-section">
-            <h2>Education Journey</h2>
-            <ul>
-                <li><span>2013 – 2016:</span> St. William Primary School</li>
-                <li><span>2017 – 2020:</span> St.Agness Chipole — <em>Foundational learning and early problem-solving skills.</em></li>
-                <li><span>2021 – 2024:</span> Mbeya Adventist Secondary School (MASS) — <em>Built core analytical skills and interest in applied sciences.</em></li>
-                <li><span>2025 – Present:</span> Mbeya University of Science and Technology (MUST) — Pursuing a degree in <strong>Mechatronics Engineering</strong>.</li>
-            </ul>
+        <div class="footer-bottom-bar">
+            <p>&copy; 2026 <span class="accent">Banzah Artz</span> (Baraka Banzah). All Hand-Drawn Rights Reserved.</p>
+            <p>Hand-crafted with graphite, ink & dedication.</p>
         </div>
+    </footer>
 
-        <div class="skills-section">
-            <h2>Core Expertise</h2>
-            <ul>
-                <li><span>Mechatronics & Hardware:</span> Circuit design, mechanical systems, sensors, and automation control.</li>
-                <li><span>Software & Web Development:</span> Python backend development (FastAPI), modern web stacks, and cross-platform tools.</li>
-                <li><span>Cyber Security & Linux:</span> Secure system configuration, network tooling, and defensive security practices on Kali Linux.</li>
-            </ul>
-        </div>
-
-        <div class="hobbies-section">
-            <h2>Hobbies & Interests</h2>
-            <ul>
-                <li><span>Music:</span> Enjoying rhythms, beats, and creative audio expression.</li>
-                <li><span>Reading:</span> Expanding knowledge and exploring new ideas.</li>
-                <li><span>Nature:</span> Appreciating the environment and outdoor surroundings.</li>
-                <li><span>Coding:</span> Building software, scripts, and local tech applications.</li>
-                <li><span>Designing:</span> Crafting visual layouts, graphics, and system architectures.</li>
-                <li><span>Creating Things (Ufundi):</span> Hands-on making, tinkering, and building physical or digital objects.</li>
-                <li><span>Bible Stories:</span> Reflecting on spiritual wisdom, history, and moral lessons.</li>
-            </ul>
-        </div>
-
-        <div class="atherskills-section">
-            <h2>Other Skills</h2>
-            <ul>
-                <li><span>Graphic Design:</span> Crafting visual layouts, brand assets, and 3D glass isometric UI elements.</li>
-                <li><span>Web Development:</span> Designing and building interactive modern websites using HTML, CSS, and JavaScript.</li>
-                <li><span>Computer Skills:</span> Advanced system setup, dual-boot troubleshooting (Linux/Windows), and hardware maintenance.</li>
-                <li><span>Embedded Systems:</span> Programming microcontrollers and building automated hardware logic.</li>
-                <li><span>Electronics:</span> Component identification, circuit analysis, and power management.</li>
-            </ul>
-        </div>
-    </div>
-
+    <!-- Core Scripts -->
+    <script src="main.js"></script>
 </body>
-</html> 
+</html>

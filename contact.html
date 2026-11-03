@@ -3,83 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Engineer Portfolio</title>
+    <title>Commissions & Contact | Banzah Artz Fine Art Studio</title>
+    <meta name="description" content="Commission a custom hand-drawn pencil portrait or ballpoint pen artwork from Baraka Banzah. View portrait sizes, pricing guidelines, and contact the studio via WhatsApp or email.">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Engineer Portfolio</div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+
+    <!-- ==========================================================================
+         Header / Navigation
+         ========================================================================== -->
+    <header class="site-header" id="main-header">
+        <a href="index.html" class="logo-brand" aria-label="Banzah Artz Home">
+            <div class="logo-icon-wrap">
+                <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="logo-text-group">
+                <span class="logo-title">BANZAH ARTZ</span>
+                <span class="logo-subtitle">Fine Art & Portraiture</span>
+            </div>
+        </a>
+
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="navbar-nav" id="navbar-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="about.html" class="nav-link">About Artist</a></li>
+            <li><a href="contact.html" class="nav-link active">Commissions & Contact</a></li>
+            <li>
+                <a href="https://wa.me/255765427438?text=Hello%20Baraka!%20I%20would%20like%20to%20commission%20a%20hand-drawn%20portrait." class="nav-cta-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Keep Your Order
+                </a>
+            </li>
         </ul>
     </header>
 
-    <main class="contact-page">
+    <!-- ==========================================================================
+         Contact Main Page
+         ========================================================================== -->
+    <main class="contact-page-container">
+        
         <div class="contact-header">
-            <span class="eyebrow">Get in touch</span>
-            <h1>Contact Me</h1>
-            <p>Feel free to reach out to me through the following contact information. I’m always open to collaboration, projects, and new opportunities.</p>
+            <span class="section-eyebrow">Studio Inquiries</span>
+            <h1 class="page-title">Commission a Portrait</h1>
+            <p class="page-lead">
+                Turn your favorite memory, wedding photo, family portrait, or sports hero into an authentic, hand-drawn paper masterpiece. Explore sizes below or contact the atelier directly.
+            </p>
         </div>
 
-        <div class="contact-grid">
-            <section class="contact-card">
-                <ul class="contact-list">
-                    <li>
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <div>
-                            <strong>Email</strong>
-                            <a href="mailto:damianmalunda123@gmail.com">damianmalunda123@gmail.com</a>
+        <!-- Size & Format Guide -->
+        <section class="size-guide-section">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <span class="badge-tag"><i class="fas fa-ruler-combined"></i> Archival Paper Formats</span>
+            </div>
+
+            <div class="size-cards-grid">
+                <!-- Size A4 -->
+                <div class="size-card">
+                    <span class="size-dimensions">A4</span>
+                    <span class="size-cm">21.0 &times; 29.7 cm &bull; 8.3 &times; 11.7 in</span>
+                    <h4>Standard Portrait</h4>
+                    <p>Perfect for intimate single head-and-shoulders portraits, desk frames, or personal keepsake gifts.</p>
+                    <ul class="size-features-list">
+                        <li><i class="fas fa-check"></i> 1 Person / Subject Focus</li>
+                        <li><i class="fas fa-check"></i> Standard Turnaround (3–5 Days)</li>
+                        <li><i class="fas fa-check"></i> Graphite or Ballpoint Pen</li>
+                        <li><i class="fas fa-check"></i> Protective Art Folder Included</li>
+                    </ul>
+                </div>
+
+                <!-- Size A3 (Popular) -->
+                <div class="size-card featured-size">
+                    <span class="size-pill-tag">Most Popular</span>
+                    <span class="size-dimensions">A3</span>
+                    <span class="size-cm">29.7 &times; 42.0 cm &bull; 11.7 &times; 16.5 in</span>
+                    <h4>Collector's Format</h4>
+                    <p>The studio's signature size! Incredible surface area for delicate hair highlights, skin pores, and dramatic contrast.</p>
+                    <ul class="size-features-list">
+                        <li><i class="fas fa-check"></i> Ideal for 1 or 2 Subjects (Couples)</li>
+                        <li><i class="fas fa-check"></i> Hyper-Realistic Detailing</li>
+                        <li><i class="fas fa-check"></i> Detailed Behind-the-Scenes Videos</li>
+                        <li><i class="fas fa-check"></i> Ready for Museum Wall Framing</li>
+                    </ul>
+                </div>
+
+                <!-- Size A2 -->
+                <div class="size-card">
+                    <span class="size-dimensions">A2</span>
+                    <span class="size-cm">42.0 &times; 59.4 cm &bull; 16.5 &times; 23.4 in</span>
+                    <h4>Grand Statement Piece</h4>
+                    <p>Substantial gallery presentation for family heirloom compositions, athletic action poses, and focal wall art.</p>
+                    <ul class="size-features-list">
+                        <li><i class="fas fa-check"></i> Up to 3–4 Subjects / Full Figures</li>
+                        <li><i class="fas fa-check"></i> 30+ Hours of Master Shading</li>
+                        <li><i class="fas fa-check"></i> Heavy-Duty Protective Art Tube</li>
+                        <li><i class="fas fa-check"></i> Certificate of Authenticity</li>
+                    </ul>
+                </div>
+
+                <!-- Size A1 -->
+                <div class="size-card">
+                    <span class="size-dimensions">A1</span>
+                    <span class="size-cm">59.4 &times; 84.1 cm &bull; 23.4 &times; 33.1 in</span>
+                    <h4>The Ultimate Masterpiece</h4>
+                    <p>Ultimate museum-scale presence. Commanding and breathtaking, crafted for multi-generational legacy portraits and life-sized impact.</p>
+                    <ul class="size-features-list">
+                        <li><i class="fas fa-check"></i> Perfect for Large Families / Full-Scale Concepts</li>
+                        <li><i class="fas fa-check"></i> 50+ Hours of Elite High-Fidelity Detailing</li>
+                        <li><i class="fas fa-check"></i> Heavy-Duty Protective Art Tube</li>
+                        <li><i class="fas fa-check"></i> Signed Certificate of Authenticity & Premium Packaging</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Form & Direct Info Grid -->
+        <div class="contact-main-grid">
+            
+            <!-- Commission Request Builder -->
+            <section class="commission-form-card">
+                <h2>Build Your Commission Inquiry</h2>
+                <p>Fill out the preferences below to instantly launch your inquiry via WhatsApp with all details pre-filled.</p>
+
+                <form id="commission-form">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="client-name">Your Full Name</label>
+                            <input type="text" id="client-name" class="form-control" placeholder="e.g. David Mwamba" required>
                         </div>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fas fa-phone"></i></span>
-                        <div>
-                            <strong>Phone</strong>
-                            <a href="tel:+255749763095">+255 749 763 095</a>
+                        <div class="form-group">
+                            <label for="art-medium">Preferred Medium</label>
+                            <select id="art-medium" class="form-control" required>
+                                <option value="Hyper-Realistic Graphite Pencil">Hyper-Realistic Graphite Pencil</option>
+                                <option value="Intricate Blue Ballpoint Pen">Intricate Blue Ballpoint Pen</option>
+                                <option value="Charcoal & Carbon Blend">Charcoal & Carbon Blend</option>
+                                <option value="Artist Recommendation (Consultation)">Artist Recommendation (Consultation)</option>
+                            </select>
                         </div>
-                    </li>
-                    <li>
-                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <div>
-                            <strong>Location</strong>
-                            <span>Tanzania /</span>
-                            <span>Ruvuma / Mbinga</span>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="art-size">Desired Format / Size</label>
+                            <select id="art-size" class="form-control" required>
+                                <option value="A3 (29.7 x 42 cm) - Recommended" selected>A3 (29.7 x 42 cm) - Recommended</option>
+                                <option value="A4 (21 x 29.7 cm)">A4 (21 x 29.7 cm)</option>
+                                <option value="A2 (42 x 59.4 cm)">A2 (42 x 59.4 cm)</option>
+                                <option value="Custom Dimensions">Custom Dimensions</option>
+                            </select>
                         </div>
-                    </li>
-                </ul>
+                        <div class="form-group">
+                            <label for="client-phone">Your Contact Number / Email</label>
+                            <input type="text" id="client-phone" class="form-control" placeholder="+255 ... or email@domain.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="art-notes">Portrait Subject & Special Requests</label>
+                        <textarea id="art-notes" class="form-control" placeholder="Describe who is in the portrait (individual, couple, celebrity), any deadline date, background preferences, or specific notes..."></textarea>
+                    </div>
+
+                    <!-- WhatsApp Photo Attachment Notice -->
+                    <div class="photo-whatsapp-notice">
+                        <i class="fab fa-whatsapp"></i>
+                        <p><strong>Picha ya  Order:</strong> Utaiambatanisha moja kwa moja kwenye WhatsApp mara tu unapobonyeza kitufe send order hapa chini.</p>
+                    </div>
+
+                    <div class="form-submit-row">
+                        <button type="submit" class="btn-primary" id="btn-submit-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Send Order via WhatsApp
+                        </button>
+                        <a href="mailto:barakabanzah@gmail.com?subject=Commission%20Inquiry%20-%20Banzah%20Artz" class="btn-secondary" id="btn-submit-email">
+                            <i class="fas fa-envelope"></i> Send Order via Email
+                        </a>
+                    </div>
+                </form>
             </section>
 
-            <aside class="social-card">
-                <ul class="social-list">
-                    <li>
-                        <span class="social-icon"><i class="fab fa-tiktok"></i></span>
-                        <a href="https://www.tiktok.com/@daxontechology" target="_blank" rel="noopener noreferrer">@daxontechnology</a>
-                    </li>
-                    <li>
-                        <span class="social-icon"><i class="fab fa-instagram"></i></span>
-                        <a href="https://www.instagram.com/daxontechnology/" target="_blank" rel="noopener noreferrer">@daxontechnology</a>
-                    </li>
-                    <li>
-                        <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
-                        <a href="https://www.facebook.com/Daxontechnology" target="_blank" rel="noopener noreferrer">@daxontec</a>
-                    </li>
-                    <li>
-                        <span class="social-icon"><i class="fab fa-github"></i></span>
-                        <a href="https://github.com/damianmalunda123" target="_blank" rel="noopener noreferrer">damianmalunda</a>
-                    </li>
-                    <li>
-                        <span class="social-icon"><i class="fab fa-pinterest-p"></i></span>
-                        <a href="https://www.pinterest.com/damianmalunda123/" target="_blank" rel="noopener noreferrer">damianmalunda</a>
-                    </li>
-                </ul>
+            <!-- Direct Contact Sidebar -->
+            <aside class="contact-sidebar">
+                
+                <div class="direct-info-card">
+                    <h3 class="sidebar-card-title">
+                        <i class="fas fa-id-card"></i> Studio Direct Contacts
+                    </h3>
+                    <ul class="direct-contacts-list">
+                        <li>
+                            <div class="contact-icon-circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>WhatsApp Instant Chat</strong>
+                                <a href="https://wa.me/255765427438" target="_blank" rel="noopener noreferrer">+255 765 427 438</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-circle">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Phone Direct</strong>
+                                <a href="tel:+255765427438">+255 765 427 438</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Email Address</strong>
+                                <a href="mailto:barakabanzah@gmail.com">barakabanzah@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-circle">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Studio Location</strong>
+                                <span>Mbeya / Iyunga, Tanzania</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social-connect-card">
+                    <h3 class="sidebar-card-title">
+                        <i class="fas fa-share-alt"></i> Follow The Studio
+                    </h3>
+                    <ul class="social-sidebar-list">
+                        <li>
+                            <a href="https://www.tiktok.com/@banzah.art.vision" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-tiktok"></i></span>
+                                <span><strong>TikTok:</strong> @banzah.art.vision</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/banzah_artz/" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-instagram"></i></span>
+                                <span><strong>Instagram:</strong> @banzah_artz</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/banzah_artz_backup/" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-instagram"></i></span>
+                                <span><strong>Backup:</strong> @banzah_artz_backup</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/1MqgkRkwfF/" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-facebook-f"></i></span>
+                                <span><strong>Facebook:</strong> @banzahartz</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@barakabanzah/" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-youtube"></i></span>
+                                <span><strong>youtube:</strong> @barakabanzah</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.pinterest.com/barakabanzah/" target="_blank" rel="noopener noreferrer">
+                                <span class="soc-icon"><i class="fab fa-pinterest-p"></i></span>
+                                <span><strong>Pinterest:</strong> @barakabanzah</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </aside>
         </div>
+
+        <!-- Commission FAQs -->
+        <section class="commission-faq-section">
+            <div style="text-align: center;">
+                <span class="section-eyebrow">Common Questions</span>
+                <h2 class="page-title" style="font-size: 2.2rem;">Commission FAQs</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h4><i class="fas fa-clock"></i> How long does a portrait take to complete?</h4>
+                    <p>Standard portraits (A4 and A3) are completed within 3 to 7 business days. Rush orders can be accommodated upon request depending on studio schedule.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h4><i class="fas fa-camera"></i> What photo should I provide?</h4>
+                    <p>High-resolution photos with good lighting and clear eye/facial details produce the most breathtaking results. You can send multiple photos via WhatsApp, and I will help select the best reference.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h4><i class="fas fa-box-open"></i> How is the drawing protected during shipping?</h4>
+                    <p>Every drawing is sprayed with museum-grade UV fixative spray to seal the graphite or ink, wrapped in acid-free tissue paper, and sandwiched between rigid boards or rolled inside a reinforced art tube.</p>
+                </div>
+
+                <div class="faq-card">
+                    <h4><i class="fas fa-globe-africa"></i> Do you ship outside Tanzania?</h4>
+                    <p>Yes! We arrange safe courier and international parcel delivery so clients worldwide can enjoy an authentic hand-drawn African portrait.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <!-- ==========================================================================
+         Site Footer
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="logo-brand">
+                    <div class="logo-icon-wrap">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="logo-text-group">
+                        <span class="logo-title">BANZAH ARTZ</span>
+                        <span class="logo-subtitle">Fine Art & Portraiture</span>
+                    </div>
+                </div>
+                <p>
+                    Specializing in hyper-realistic pencil portraits, ballpoint pen hatching, charcoal drawing, color pencil drawings and custom artwork commissions based in Mbeya, Tanzania with worldwide delivery.
+                </p>
+                <div class="footer-social-wrap">
+                    <a href="https://wa.me/255765427438" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/banzah_artz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@banzah.art.vision" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/1MqgkRkwfF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Navigation</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-chevron-right"></i> Artwork Gallery</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Artist</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Commissions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Disciplines</h4>
+                <ul class="footer-links-list">
+                    <li><a href="Gallery.html"><i class="fas fa-pencil-alt"></i> Pencil Portraits</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-pen"></i> Ballpoint Pen Art</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-pen"></i> Charcoal pencial & Color pencial</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-futbol"></i> Sports Icons</a></li>
+                    <li><a href="contact.html"><i class="fas fa-gift"></i> Custom Gifts</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Direct Inquiries</h4>
+                <ul class="footer-links-list">
+                    <li><a href="https://wa.me/255765427438"><i class="fab fa-whatsapp"></i> +255 765 427 438</a></li>
+                    <li><a href="mailto:barakabanzah@gmail.com"><i class="fas fa-envelope"></i> barakabanzah@gmail.com</a></li>
+                    <li><span><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> Mbeya / Iyunga, Tanzania</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p>&copy; 2026 <span class="accent">Banzah Artz</span> (Baraka Banzah). All Hand-Drawn Rights Reserved.</p>
+            <p>Hand-crafted with graphite, ink & dedication.</p>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="main.js"></script>
 </body>
 </html>

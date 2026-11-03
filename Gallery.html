@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Gallery | Banzah Artz Hand-Drawn Masterpieces</title>
+    <meta name="description" content="Explore original hand-drawn pencil portraits, ballpoint pen artworks, and celebrity drawings by Baraka Banzah. View high-resolution artworks and commission your own piece.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="Gallery.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+         Header / Navigation
+         ========================================================================== -->
+    <header class="site-header" id="main-header">
+        <a href="index.html" class="logo-brand" aria-label="Banzah Artz Home">
+            <div class="logo-icon-wrap">
+                <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="logo-text-group">
+                <span class="logo-title">BANZAH ARTZ</span>
+                <span class="logo-subtitle">Fine Art & Portraiture</span>
+            </div>
+        </a>
+
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="navbar-nav" id="navbar-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Gallery.html" class="nav-link active">Gallery</a></li>
+            <li><a href="about.html" class="nav-link">About Artist</a></li>
+            <li><a href="contact.html" class="nav-link">Commissions & Contact</a></li>
+            <li>
+                <a href="https://wa.me/255765427438?text=Hello%20Baraka!%20I%20would%20like%20to%20commission%20a%20hand-drawn%20portrait." class="nav-cta-btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Keep Your Order
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- ==========================================================================
+         Gallery Page Main
+         ========================================================================== -->
+    <main class="gallery-page-container">
+        <div class="gallery-header">
+            <span class="section-eyebrow">The Atelier Collection</span>
+            <h1 class="page-title">Hand-Drawn Gallery</h1>
+            <p class="page-lead">
+                Every piece below is 100% physically hand-crafted on paper using graphite pencils or fine-tip ballpoint pens. Click any artwork to view details in high resolution or commission a similar piece.
+            </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="gallery-filter-wrap">
+            <button class="gallery-filter-btn active" data-filter="all">
+                <i class="fas fa-layer-group"></i> All Works (15)
+            </button>
+            <button class="gallery-filter-btn" data-filter="pencil">
+                <i class="fas fa-pencil-alt"></i> Pencil & Graphite
+            </button>
+            <button class="gallery-filter-btn" data-filter="pen">
+                <i class="fas fa-pen-nib"></i> Ballpoint Pen
+            </button>
+            <button class="gallery-filter-btn" data-filter="football">
+                <i class="fas fa-futbol"></i> Football & Icons
+            </button>
+            <button class="gallery-filter-btn" data-filter="sketches">
+                <i class="fas fa-paint-brush"></i> Expressive & Character
+            </button>
+        </div>
+
+        <!-- 15 Authentic Artworks Grid -->
+        <div class="artworks-grid" id="gallery-grid">
+            
+            <!-- Art 1: Tom in the Rain -->
+            <article class="art-card" data-category="pen sketches" data-img="image/1.jpg" data-title="Tom in the Rain" data-medium="Blue Ballpoint Pen on Lined Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/1.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-ink">Ballpoint Pen</span>
+                        <span class="art-year-tag">2024</span>
+                    </div>
+                    <h3 class="art-card-title">Tom in the Rain</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 2: Graceful Adornment -->
+            <article class="art-card" data-category="pen portraits" data-img="image/2.jpg" data-title="Graceful Adornment" data-medium="Blue Ballpoint Pen on Notebook Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/2.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-ink">coloured</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">Glass with bear</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 3: Hyper-Real Caricature Expression -->
+            <article class="art-card" data-category="pencil sketches" data-img="image/3.jpg" data-title="The Intense Gaze" data-medium="Graphite & Charcoal on Cartridge Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/3.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-pencil">coloured</span>
+                        <span class="art-year-tag">2025</span>
+                    </div>
+                    <h3 class="art-card-title">carton</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 4: Lionel Messi The Visionary -->
+            <article class="art-card" data-category="pencil football" data-img="image/4.jpg" data-title="Lionel Messi — The Visionary" data-medium="Graphite Pencil & Dynamic Hatch Marks" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/4.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag">Graphite & pencial</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">Man in a suit</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 5: Kylian Mbappe Focused Resolve -->
+            <article class="art-card" data-category="pencil football" data-img="image/5.jpg" data-title="Kylian Mbappé — Precision" data-medium="Hyper-Realistic Graphite on 250gsm Bristol" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/5.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag">Graphite & pencial</span>
+                        <span class="art-year-tag">2024</span>
+                    </div>
+                    <h3 class="art-card-title">picture with refarence — Precision</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 6: Jude Bellingham Golden Era -->
+            <article class="art-card" data-category="pencil football" data-img="image/6.jpg" data-title="Jude Bellingham — Golden Era" data-medium="Graphite & Gold-Accented Charcoal" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/6.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag">Graphite & pencial</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">Boots </h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 7: Silent Tears -->
+            <article class="art-card" data-category="pencil sketches" data-img="image/7.jpg" data-title="Silent Tears" data-medium="Soft Graphite & Charcoal Blend" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/7.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-pencil">Graphite & pencial</span>
+                        <span class="art-year-tag">2025</span>
+                    </div>
+                    <h3 class="art-card-title">A good smile</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 8: Casual Elegance (Seated with Pen) -->
+            <article class="art-card" data-category="pen portraits" data-img="image/8.jpg" data-title="Casual Elegance" data-medium="Blue Bic Ballpoint Pen on Heavyweight Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/8.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-ink">Graphite & pencial</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">A child</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 9: Whispers in the Wind -->
+            <article class="art-card" data-category="pencil portraits" data-img="image/9.jpg" data-title="Whispers in the Wind" data-medium="Hyper-Realistic Graphite Portrait" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/9.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-pencil">Graphite & pencial</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">Good apriciation</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 10: The Creative Mind -->
+            <article class="art-card" data-category="pen sketches" data-img="image/10.jpg" data-title="The Creative Mind" data-medium="Fine-Tip Ink Pen on Grid Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/10.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag tag-ink">Graphite & pencial</span>
+                        <span class="art-year-tag">2024</span>
+                    </div>
+                    <h3 class="art-card-title">The big man</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 11: Lionel Messi The Joyful Champion -->
+            <article class="art-card" data-category="pencil football" data-img="image/11.jpg" data-title="Lionel Messi — The Champion's Smile" data-medium="Smooth Graphite on Textured Paper" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/11.jpg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag">Coloured</span>
+                        <span class="art-year-tag">2025</span>
+                    </div>
+                    <h3 class="art-card-title">Lion king</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Art 12: Banzah Portrait -->
+            <article class="art-card" data-category="portrait" data-img="image/12.jpg" data-title="Banzah Portrait" data-medium="Professional Portrait Photograph" data-desc="Original handcrafted artwork by Baraka Banzah.">
+                <div class="art-card-frame">
+                    <div class="art-card-img-wrap">
+                        <img src="image/13.jpeg" alt="photo" loading="lazy">
+                        <div class="art-card-overlay">
+                            <span class="art-quick-zoom-badge"><i class="fas fa-search-plus"></i> View High-Res</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-card-body">
+                    <div class="art-card-meta-row">
+                        <span class="badge-tag">charcal & pencial</span>
+                        <span class="art-year-tag">2026</span>
+                    </div>
+                    <h3 class="art-card-title">Super woman</h3>
+                    <p class="art-card-desc"></p>
+                    <div class="art-card-footer">
+                        <span class="art-view-trigger">Inspect Piece <i class="fas fa-arrow-right"></i></span>
+                        <span class="art-year-tag"><i class="fas fa-expand"></i> Expand</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- ==========================================================================
+         Interactive Lightbox Modal
+         ========================================================================== -->
+    <div class="art-lightbox-modal" id="art-lightbox" role="dialog" aria-modal="true" aria-label="Artwork detail view">
+        <button class="lightbox-close-btn" id="lightbox-close" aria-label="Close artwork view">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-prev-btn" id="lightbox-prev" aria-label="Previous artwork">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav-btn lightbox-next-btn" id="lightbox-next" aria-label="Next artwork">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="lightbox-content-box">
+            <div class="lightbox-image-side">
+                <img src="image/5.jpg" alt="photo" id="lightbox-img">
+            </div>
+            <div class="lightbox-details-side">
+                <div class="lightbox-info-group">
+                    <h2 class="lightbox-title-text" id="lightbox-title">Kylian Mbappé</h2>
+                    <p class="lightbox-medium-text" id="lightbox-medium">Hyper-Realistic Graphite on 250gsm Bristol</p>
+                    <p class="lightbox-desc-text" id="lightbox-desc">Original handcrafted artwork by Baraka Banzah.</p>
+                </div>
+
+                <div class="lightbox-order-box">
+                    <a href="https://wa.me/255765427438" id="lightbox-commission-btn" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Commission a Similar Portrait
+                    </a>
+                    <p><i class="fas fa-shield-alt" style="color: var(--accent-gold);"></i> Shipped with professional protective matting and art fixative.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         Site Footer
+         ========================================================================== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col-brand">
+                <div class="logo-brand">
+                    <div class="logo-icon-wrap">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <div class="logo-text-group">
+                        <span class="logo-title">BANZAH ARTZ</span>
+                        <span class="logo-subtitle">Fine Art & Portraiture</span>
+                    </div>
+                </div>
+                <p>
+                    Specializing in hyper-realistic pencil portraits, ballpoint pen hatching, and custom artwork commissions based in Mbeya, Tanzania with worldwide delivery.
+                </p>
+                <div class="footer-social-wrap">
+                    <a href="https://wa.me/255765427438" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/banzah_artz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@banzah.art.vision" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/share/1MqgkRkwfF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/barakabanzah/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Navigation</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-chevron-right"></i> Artwork Gallery</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Artist</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Commissions</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Disciplines</h4>
+                <ul class="footer-links-list">
+                    <li><a href="Gallery.html"><i class="fas fa-pencil-alt"></i> Pencil Portraits</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-pen"></i> Ballpoint Pen Art</a></li>
+                    <li><a href="Gallery.html"><i class="fas fa-futbol"></i> Sports Icons</a></li>
+                    <li><a href="contact.html"><i class="fas fa-gift"></i> Custom Gifts</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-col-heading">Direct Inquiries</h4>
+                <ul class="footer-links-list">
+                    <li><a href="https://wa.me/255765427438"><i class="fab fa-whatsapp"></i> +255 765 427 438</a></li>
+                    <li><a href="mailto:barakabanzah@gmail.com"><i class="fas fa-envelope"></i> barakabanzah@gmail.com</a></li>
+                    <li><span><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> Mbeya / Iyunga, Tanzania</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+            <p>&copy; 2026 <span class="accent">Banzah Artz</span> (Baraka Banzah). All Hand-Drawn Rights Reserved.</p>
+            <p>Hand-crafted with graphite, ink & dedication.</p>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>

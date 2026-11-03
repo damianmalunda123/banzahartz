@@ -1,237 +1,446 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* ==========================================================================
+   BANZAH ARTZ — Contact & Commission Stylesheet
+   ========================================================================== */
 
-html {
-    scroll-behavior: smooth;
-}
+@import url('shared.css');
 
-body {
-    background: linear-gradient(135deg, #07110b 0%, #0d1b12 100%);
-    color: #f5f5f5;
-    min-height: 100vh;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: rgba(9, 18, 13, 0.8);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(0, 255, 136, 0.2);
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #00ff88;
-    letter-spacing: 1px;
-}
-
-.navbar {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: #00ff88;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #ffffff;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.contact-page {
-    padding: 80px 8% 100px;
+.contact-page-container {
+    padding: 130px 7% 90px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .contact-header {
     text-align: center;
-    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto 50px;
 }
 
-.contact-header .eyebrow {
-    color: #00ff88;
-    letter-spacing: 0.2em;
+/* ==========================================================================
+   Commission Size & Pricing Guide
+   ========================================================================== */
+.size-guide-section {
+    margin-bottom: 60px;
+}
+
+.size-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+    margin-top: 30px;
+}
+
+.size-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: all var(--transition-smooth);
+}
+
+.size-card.featured-size {
+    border-color: var(--border-gold);
+    background: linear-gradient(180deg, rgba(223, 168, 99, 0.08) 0%, rgba(22, 26, 34, 0.8) 100%);
+    box-shadow: var(--shadow-gold);
+}
+
+.size-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-gold-bright);
+    box-shadow: var(--shadow-elevated);
+}
+
+.size-pill-tag {
+    position: absolute;
+    top: -12px;
+    background: var(--accent-gold);
+    color: #0c0e12;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 12px;
-    display: inline-block;
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
 }
 
-.contact-header h1 {
-    color: #ffffff;
-    font-size: clamp(2.2rem, 4vw, 4rem);
+.size-dimensions {
+    font-family: var(--font-heading);
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--accent-gold-bright);
+    margin-bottom: 4px;
+}
+
+.size-cm {
+    font-size: 13px;
+    color: var(--text-muted);
     margin-bottom: 16px;
 }
 
-.contact-header p {
-    color: #c7c7c7;
-    font-size: 1.05rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.7;
+.size-card h4 {
+    font-family: var(--font-heading);
+    font-size: 17px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 30px;
-    max-width: 1100px;
-    margin: 0 auto;
+.size-card p {
+    color: var(--text-secondary);
+    font-size: 13.5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.contact-card,
-.social-card {
-    background: rgba(17, 42, 29, 0.72);
-    border: 1px solid rgba(0, 255, 136, 0.35);
-    border-radius: 22px;
-    padding: 30px;
-    box-shadow: 0 0 25px rgba(0, 255, 136, 0.08);
-}
-
-.contact-list {
+.size-features-list {
     list-style: none;
-    display: grid;
-    gap: 22px;
-}
-
-.contact-list li {
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    color: #dfe7e3;
-    font-size: 1rem;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 16px;
+    text-align: left;
+    font-size: 12.5px;
+    color: var(--text-muted);
 }
 
-.contact-list .icon {
-    width: 48px;
-    height: 48px;
-    display: inline-flex;
+.size-features-list li {
+    display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(0, 255, 136, 0.12);
-    border: 1px solid rgba(0, 255, 136, 0.5);
-    color: #00ff88;
-    font-size: 1.1rem;
-    flex-shrink: 0;
+    gap: 8px;
 }
 
-.contact-list strong {
-    display: block;
-    margin-bottom: 4px;
-    color: #ffffff;
-    font-size: 1.05rem;
+.size-features-list li i {
+    color: var(--accent-gold);
+    font-size: 11px;
 }
 
-.contact-list a {
-    color: #00ff88;
-    text-decoration: none;
-}
-
-.contact-list a:hover {
-    text-decoration: underline;
-}
-
-.social-list {
-    list-style: none;
+/* ==========================================================================
+   Commission Form & Contact Info Two-Column Grid
+   ========================================================================== */
+.contact-main-grid {
     display: grid;
-    gap: 16px;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    margin-bottom: 70px;
 }
 
-.social-list li {
+.commission-form-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-lg);
+    padding: 40px 36px;
+    box-shadow: var(--shadow-elevated);
+}
+
+.commission-form-card h2 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.commission-form-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.form-control {
+    background: rgba(12, 14, 18, 0.7);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    padding: 13px 16px;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    background: rgba(18, 21, 28, 0.95);
+    box-shadow: 0 0 15px var(--accent-gold-glow);
+}
+
+select.form-control {
+    cursor: pointer;
+}
+
+select.form-control option {
+    background: #14171d;
+    color: var(--text-primary);
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 110px;
+}
+
+/* WhatsApp Photo Notice */
+.photo-whatsapp-notice {
     display: flex;
     align-items: center;
     gap: 14px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 14px;
-    padding: 14px 16px;
+    background: rgba(37, 211, 102, 0.08);
+    border: 1px solid rgba(37, 211, 102, 0.28);
+    border-radius: var(--radius-md);
+    padding: 16px 18px;
+    margin-bottom: 24px;
 }
 
-.social-list .social-icon {
-    width: 42px;
-    height: 42px;
-    display: inline-flex;
-    justify-content: center;
+.photo-whatsapp-notice i {
+    font-size: 26px;
+    color: #25D366;
+    flex-shrink: 0;
+}
+
+.photo-whatsapp-notice p {
+    font-size: 13.5px;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.5;
+}
+
+.photo-whatsapp-notice strong {
+    color: var(--text-primary);
+}
+
+.form-helper-text {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin-top: 7px;
+    display: block;
+}
+
+.form-helper-text i {
+    color: var(--accent-gold);
+}
+
+.form-submit-row {
+    margin-top: 10px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Contact Sidebar */
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.direct-info-card,
+.social-connect-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 30px 26px;
+    box-shadow: var(--shadow-subtle);
+}
+
+.sidebar-card-title {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.sidebar-card-title i {
+    color: var(--accent-gold);
+}
+
+.direct-contacts-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.direct-contacts-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact-icon-circle {
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background: rgba(0, 255, 136, 0.12);
-    color: #00ff88;
-    font-size: 1rem;
+    background: rgba(223, 168, 99, 0.12);
+    border: 1px solid var(--border-gold);
+    color: var(--accent-gold-bright);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
 }
 
-.social-list a {
-    color: #f0f0f0;
+.contact-detail-text strong {
+    display: block;
+    font-size: 13.5px;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.contact-detail-text a {
+    color: var(--accent-gold);
     text-decoration: none;
+    font-size: 14px;
+    transition: color var(--transition-fast);
 }
 
-.social-list a:hover {
-    color: #00ff88;
+.contact-detail-text a:hover {
+    color: var(--accent-gold-bright);
+    text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-    .contact-grid {
+.contact-detail-text span {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.social-sidebar-list {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.social-sidebar-list li a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all var(--transition-fast);
+}
+
+.social-sidebar-list li a:hover {
+    border-color: var(--accent-gold);
+    background: rgba(223, 168, 99, 0.08);
+    color: var(--accent-gold-bright);
+    transform: translateX(4px);
+}
+
+.social-sidebar-list .soc-icon {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Commission FAQ Section
+   ========================================================================== */
+.commission-faq-section {
+    margin-bottom: 40px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.faq-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+}
+
+.faq-card h4 {
+    font-family: var(--font-heading);
+    font-size: 16px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-card h4 i {
+    color: var(--accent-gold);
+    font-size: 14px;
+}
+
+.faq-card p {
+    color: var(--text-secondary);
+    font-size: 13.5px;
+    line-height: 1.65;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .size-cards-grid {
         grid-template-columns: 1fr;
     }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        background-color: #0b130e;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        transition: 0.3s ease;
-        border-bottom: 1px solid #1a2e22;
-    }
-
-    #menu-toggle:checked ~ .navbar {
-        left: 0;
+    .contact-main-grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media (max-width: 560px) {
-    .contact-page {
-        padding-top: 60px;
+@media (max-width: 640px) {
+    .form-group-row {
+        grid-template-columns: 1fr;
     }
-
-    .contact-card,
-    .social-card {
-        padding: 22px 18px;
+    .faq-grid {
+        grid-template-columns: 1fr;
     }
-
-    .logo {
-        font-size: 18px;
+    .commission-form-card {
+        padding: 26px 20px;
+    }
+    .file-preview-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .preview-thumbnail-wrap {
+        width: 100%;
+        height: 160px;
+    }
+    .btn-remove-photo {
+        width: 100%;
+        justify-content: center;
     }
 }
