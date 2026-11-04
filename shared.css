@@ -34,6 +34,18 @@
 
     --shadow-subtle: 0 2px 4px rgba(0,0,0,0.05);
     --shadow-elevated: 0 10px 30px rgba(0,0,0,0.08);
+
+    /* Gold Accents - used by the page stylesheets */
+    --accent-gold: #dfa863;
+    --accent-gold-bright: #ebbd7e;
+    --accent-gold-dark: #b8843f;
+    --accent-gold-glow: rgba(223, 168, 99, 0.2);
+    --border-gold: rgba(223, 168, 99, 0.35);
+    --border-gold-hover: rgba(223, 168, 99, 0.6);
+    --border-ink: var(--border-strong);
+    --shadow-gold: 0 4px 16px rgba(223, 168, 99, 0.25);
+
+    --font-serif: Georgia, 'Times New Roman', serif;
 }
 
 /* Theme: Dark Mode */
